@@ -1,4 +1,4 @@
-# Macchiato Framework
+# Tiny Burrito Web Framework
 
 Currently in version 0.0.1
 

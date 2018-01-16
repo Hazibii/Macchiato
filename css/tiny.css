@@ -1,12 +1,11 @@
 /*
 * Mochattio V0.0.1
 * Copyright 2017, Hasib Sarvari
-* www.getmocahttio.com
+* www.tinyburrito.com
 * Free to use under the MIT license.
 * http://www.opensource.org/licenses/mit-license.php
 * 12/29/2017
 */
-
 
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -29,11 +28,8 @@
 
 /* Components
 ––––––––––––––––––––––––––––––––––––––––––––––––––
-- Parallax Images
-- Button dropdowns
-- Cards
-- Thumbnails
-- Pagination
+- Modals
+- 
 -
 */
 
@@ -42,14 +38,15 @@
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
+  display: flex;
   position: relative;
   width: 100%;
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
-.column,
-.columns {
+.col,
+.cols {
   width: 100%;
   float: left;
   box-sizing: border-box; }
@@ -57,6 +54,7 @@
 /* For devices larger than 400px */
 @media (min-width: 400px) {
   .container {
+    display: flex;
     width: 85%;
     padding: 0; }
 }
@@ -64,32 +62,33 @@
 /* For devices larger than 550px */
 @media (min-width: 550px) {
   .container {
+    display: flex;
     width: 80%; }
-  .column,
-  .columns {
+  .col,
+  .cols {
     margin-left: 4%; }
-  .column:first-child,
-  .columns:first-child {
+  .col:first-child,
+  .cols:first-child {
     margin-left: 0; }
 
-  .one.column,
-  .one.columns                    { width: 4.66666666667%; }
-  .two.columns                    { width: 13.3333333333%; }
-  .three.columns                  { width: 22%;            }
-  .four.columns                   { width: 30.6666666667%; }
-  .five.columns                   { width: 39.3333333333%; }
-  .six.columns                    { width: 48%;            }
-  .seven.columns                  { width: 56.6666666667%; }
-  .eight.columns                  { width: 65.3333333333%; }
-  .nine.columns                   { width: 74.0%;          }
-  .ten.columns                    { width: 82.6666666667%; }
-  .eleven.columns                 { width: 91.3333333333%; }
-  .twelve.columns                 { width: 100%; margin-left: 0; }
+  .one.col,
+  .one.cols                    { width: 4.66666666667%; }
+  .two.cols                    { width: 13.3333333333%; }
+  .three.cols                  { width: 22%;            }
+  .four.cols                   { width: 30.6666666667%; }
+  .five.cols                   { width: 39.3333333333%; }
+  .six.cols                    { width: 48%;            }
+  .seven.cols                  { width: 56.6666666667%; }
+  .eight.cols                  { width: 65.3333333333%; }
+  .nine.cols                   { width: 74.0%;          }
+  .ten.cols                    { width: 82.6666666667%; }
+  .eleven.cols                 { width: 91.3333333333%; }
+  .twelve.cols                 { width: 100%; margin-left: 0; }
 
-  .one-third.column               { width: 30.6666666667%; }
-  .two-thirds.column              { width: 65.3333333333%; }
+  .one-third.col              { width: 30.6666666667%; }
+  .two-thirds.col             { width: 65.3333333333%; }
 
-  .one-half.column                { width: 48%; }
+  .one-half.col               { width: 48%; }
 
   /* Offsets */
   .offset-by-one.column,
@@ -429,3 +428,7 @@ there.
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+
+
+/* Components
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
