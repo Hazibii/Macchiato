@@ -37,6 +37,12 @@
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+html{
+  box-sizing:border-box;
+}
+*,*:before,*:after{
+  box-sizing:inherit;
+}
 .container {
   display: flex;
   position: relative;
@@ -391,6 +397,14 @@ hr {
   border-width: 0;
   border-top: 1px solid #E1E1E1; }
 
+.left{
+  justify-content: flex-start;
+}
+
+.right{
+  justify-content: flex-end;
+}
+
 
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -402,7 +416,6 @@ hr {
   content: "";
   display: table;
   clear: both; }
-
 
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
